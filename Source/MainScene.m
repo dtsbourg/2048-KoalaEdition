@@ -12,6 +12,8 @@
     Grid *_grid;
     CCLabelTTF *_scoreLabel;
     CCLabelTTF *_highscoreLabel;
+    CCSprite *_koala;
+
 }
 
 - (void)didLoadFromCCB {
@@ -22,6 +24,19 @@
                                                context:NULL];
     // load highscore
     [self updateHighscore];
+    
+    int newHighscore = [[[NSUserDefaults standardUserDefaults] objectForKey:@"highscore"]intValue];
+    if (newHighscore < 1000) {
+       [_koala setTexture:[[CCSprite spriteWithImageNamed:@"koala_peace.png"]texture]];
+    }
+    else if (newHighscore < 15000)
+    {
+        [_koala setTexture:[[CCSprite spriteWithImageNamed:@"koala_cane.png"]texture]];
+    }
+    else if (newHighscore < 30000)
+    {
+        [_koala setTexture:[[CCSprite spriteWithImageNamed:@"koala_lightsaber.png"]texture]];
+    }
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath
@@ -44,6 +59,19 @@
     NSNumber *newHighscore = [[NSUserDefaults standardUserDefaults] objectForKey:@"highscore"];
     if (newHighscore) {
         _highscoreLabel.string = [NSString stringWithFormat:@"%d", [newHighscore intValue]];
+    }
+    
+    int highscore = [[[NSUserDefaults standardUserDefaults] objectForKey:@"highscore"]intValue];
+    if (highscore < 1000) {
+        [_koala setTexture:[[CCSprite spriteWithImageNamed:@"koala_peace.png"]texture]];
+    }
+    else if (highscore < 15000)
+    {
+        [_koala setTexture:[[CCSprite spriteWithImageNamed:@"koala_cane.png"]texture]];
+    }
+    else if (highscore < 30000)
+    {
+        [_koala setTexture:[[CCSprite spriteWithImageNamed:@"koala_lightsaber.png"]texture]];
     }
 }
 

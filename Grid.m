@@ -8,6 +8,7 @@
 
 #import "Grid.h"
 #import "Tile.h"
+#import "GameEnd.h"
 
 @implementation Grid {
         CGFloat _columnWidth;
@@ -16,7 +17,7 @@
         CGFloat _tileMarginHorizontal;
         NSMutableArray *_gridArray;
         NSNull *_noTile;
-    }
+}
 
 static const NSInteger WIN_TILE = 2048;
 static const NSInteger GRID_SIZE = 4;
@@ -34,7 +35,7 @@ static const NSInteger START_TILES = 2;
         }
     }
     [self spawnStartTiles];
-    
+        
     // listen for swipes to the left
     UISwipeGestureRecognizer * swipeLeft= [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(swipeLeft)];
     swipeLeft.direction = UISwipeGestureRecognizerDirectionLeft;
@@ -349,12 +350,19 @@ static const NSInteger START_TILES = 2;
 - (void)endGameWithMessage:(NSString*)message {
     NSNumber *highScore = [[NSUserDefaults standardUserDefaults] objectForKey:@"highscore"];
     if (self.score > [highScore intValue]) {
-        // new highscore!
+        
         highScore = [NSNumber numberWithInt:self.score];
         [[NSUserDefaults standardUserDefaults] setObject:highScore forKey:@"highscore"];
         [[NSUserDefaults standardUserDefaults] synchronize];
+        
     }
-
+    
+    GameEnd *gameEndPopover = (GameEnd *)[CCBReader load:@"GameEnd"];
+    gameEndPopover.positionType = CCPositionTypeNormalized;
+    gameEndPopover.position = ccp(0.5, 0.5);
+    gameEndPopover.zOrder = INT_MAX;
+    [gameEndPopover setMessage:message score:self.score];
+    [self addChild:gameEndPopover];
 }
 
 

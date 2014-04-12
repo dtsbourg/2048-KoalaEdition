@@ -11,5 +11,4 @@
 @interface Grid : CCNodeColor
 @property (nonatomic, assign) NSInteger score;
 
-
 @end
