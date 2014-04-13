@@ -26,7 +26,7 @@
     [self updateHighscore];
     
     int newHighscore = [[[NSUserDefaults standardUserDefaults] objectForKey:@"highscore"]intValue];
-    if (newHighscore < 1000) {
+    if (newHighscore < 5000) {
        [_koala setTexture:[[CCSprite spriteWithImageNamed:@"koala_peace.png"]texture]];
     }
     else if (newHighscore < 15000)

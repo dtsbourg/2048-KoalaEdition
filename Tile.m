@@ -49,7 +49,7 @@
             backgroundColor = [CCColor colorWithRed:232.f/255.f green:200.f/255.f blue:88.f/255.f];
             break;
         case 256:
-            backgroundColor = [CCColor colorWithRed:233.f/255.f green:296.f/255.f blue:70.f/255.f];
+            backgroundColor = [CCColor colorWithRed:233.f/255.f green:196.f/255.f blue:70.f/255.f];
             break;
         case 512:
             backgroundColor = [CCColor colorWithRed:233.f/255.f green:192.f/255.f blue:53.f/255.f];

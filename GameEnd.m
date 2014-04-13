@@ -26,13 +26,15 @@
 }
 
 - (void)keepPlaying {
-    CCScene *current = [[CCDirector sharedDirector] runningScene];
+    if([_messageLabel.string isEqualToString:@"You win!"]) {
+        CCScene *current = [[CCDirector sharedDirector] runningScene];
     
-    Grid*grid = [[[[current children] firstObject] children] objectAtIndex:1];
-    NSArray*d = [grid children];
-    GameEnd *popover = [d lastObject];
+        Grid*grid = [[[[current children] firstObject] children] objectAtIndex:1];
+        NSArray*d = [grid children];
+        GameEnd *popover = [d lastObject];
     
-    [grid removeChild:popover];
+        [grid removeChild:popover];
+    }
 }
 
 
