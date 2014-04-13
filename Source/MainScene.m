@@ -8,6 +8,8 @@
 
 #import "MainScene.h"
 #import "Grid.h"
+#define IS_IPHONE5 (([[UIScreen mainScreen] bounds].size.height-568)?NO:YES)
+
 @implementation MainScene {
     Grid *_grid;
     CCLabelTTF *_scoreLabel;
@@ -27,6 +29,10 @@
                                                context:NULL];
     // load highscore
     [self updateHighscore];
+    
+    if (IS_IPHONE5 == NO) {
+        _koala.scale = 0.7 ;
+    }
     
     int newHighscore = [[[NSUserDefaults standardUserDefaults] objectForKey:@"highscore"]intValue];
     if (newHighscore < 5000) {
@@ -92,7 +98,12 @@
         
         CGRect adFrame = _adView.frame;
         
-        adFrame.origin.y = 569-_adView.frame.size.height;
+        if (IS_IPHONE5) {
+            adFrame.origin.y = 569-_adView.frame.size.height;
+        }
+        
+        else adFrame.origin.y = 480-_adView.frame.size.height;
+        
         _adView.frame = adFrame;
 
         [[[CCDirector sharedDirector]view]addSubview:_adView];

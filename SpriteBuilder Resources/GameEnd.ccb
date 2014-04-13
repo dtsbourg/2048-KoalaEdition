@@ -216,10 +216,10 @@
 								<string>Size</string>
 								<key>value</key>
 								<array>
-									<real>40</real>
-									<real>40</real>
-									<integer>0</integer>
-									<integer>0</integer>
+									<real>1</real>
+									<real>1</real>
+									<integer>2</integer>
+									<integer>2</integer>
 								</array>
 							</dict>
 							<dict>
@@ -231,8 +231,8 @@
 								<array>
 									<real>0.0</real>
 									<real>0.0</real>
-									<integer>0</integer>
-									<integer>0</integer>
+									<integer>2</integer>
+									<integer>2</integer>
 								</array>
 							</dict>
 							<dict>
@@ -273,7 +273,7 @@
 								<key>value</key>
 								<array>
 									<string></string>
-									<string>ccbResources/ccbButtonHighlighted.png</string>
+									<string></string>
 								</array>
 							</dict>
 							<dict>
@@ -297,8 +297,16 @@
 								<key>value</key>
 								<array>
 									<string></string>
-									<string>ccbResources/ccbButtonNormal.png</string>
+									<string></string>
 								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>backgroundOpacity|Disabled</string>
+								<key>type</key>
+								<string>Float</string>
+								<key>value</key>
+								<real>1</real>
 							</dict>
 							<dict>
 								<key>name</key>
@@ -316,8 +324,16 @@
 								<key>value</key>
 								<array>
 									<string></string>
-									<string>ccbResources/ccbButtonNormal.png</string>
+									<string></string>
 								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>backgroundOpacity|Selected</string>
+								<key>type</key>
+								<string>Float</string>
+								<key>value</key>
+								<real>1</real>
 							</dict>
 							<dict>
 								<key>name</key>
@@ -353,7 +369,7 @@
 								<string>FloatScale</string>
 								<key>value</key>
 								<array>
-									<real>10</real>
+									<real>0.0</real>
 									<integer>0</integer>
 								</array>
 							</dict>
@@ -388,9 +404,9 @@
 								<string>Color4</string>
 								<key>value</key>
 								<array>
-									<real>0.0</real>
-									<real>0.0</real>
-									<real>0.0</real>
+									<real>1</real>
+									<real>1</real>
+									<real>1</real>
 									<real>0.0</real>
 								</array>
 							</dict>
@@ -437,7 +453,7 @@
 								<key>value</key>
 								<array>
 									<real>0.0</real>
-									<real>-2</real>
+									<real>0.0</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -471,11 +487,11 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>0.19062499701976776</real>
-							<real>62</real>
-							<integer>0</integer>
+							<real>0.20000000298023224</real>
+							<real>0.75999999046325684</real>
+							<integer>1</integer>
 							<integer>2</integer>
-							<integer>0</integer>
+							<integer>2</integer>
 						</array>
 					</dict>
 					<dict>
@@ -522,9 +538,9 @@
 						<string>Color3</string>
 						<key>value</key>
 						<array>
+							<real>0.99607843160629272</real>
 							<real>0.58823531866073608</real>
-							<real>0.82352942228317261</real>
-							<real>0.58431375026702881</real>
+							<real>0.26666668057441711</real>
 							<real>1</real>
 						</array>
 					</dict>
@@ -579,11 +595,11 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>166.99996948242188</real>
-							<real>349</real>
+							<real>0.5</real>
+							<real>0.60000002384185791</real>
 							<integer>0</integer>
-							<integer>0</integer>
-							<integer>0</integer>
+							<integer>2</integer>
+							<integer>2</integer>
 						</array>
 					</dict>
 					<dict>
@@ -667,7 +683,7 @@
 						<key>type</key>
 						<string>IntegerLabeled</string>
 						<key>value</key>
-						<integer>0</integer>
+						<integer>1</integer>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -675,7 +691,7 @@
 						<key>type</key>
 						<string>IntegerLabeled</string>
 						<key>value</key>
-						<integer>0</integer>
+						<integer>1</integer>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -784,11 +800,11 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>160.99996948242188</real>
-							<real>284</real>
+							<real>0.5</real>
+							<real>0.49000000953674316</real>
 							<integer>0</integer>
-							<integer>0</integer>
-							<integer>0</integer>
+							<integer>2</integer>
+							<integer>2</integer>
 						</array>
 					</dict>
 					<dict>
@@ -885,7 +901,7 @@
 						<key>type</key>
 						<string>IntegerLabeled</string>
 						<key>value</key>
-						<integer>0</integer>
+						<integer>1</integer>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -893,7 +909,7 @@
 						<key>type</key>
 						<string>IntegerLabeled</string>
 						<key>value</key>
-						<integer>0</integer>
+						<integer>1</integer>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -1056,10 +1072,10 @@
 								<string>Size</string>
 								<key>value</key>
 								<array>
-									<real>40</real>
-									<real>40</real>
-									<integer>0</integer>
-									<integer>0</integer>
+									<real>1</real>
+									<real>1</real>
+									<integer>2</integer>
+									<integer>2</integer>
 								</array>
 							</dict>
 							<dict>
@@ -1071,8 +1087,8 @@
 								<array>
 									<real>0.0</real>
 									<real>0.0</real>
-									<integer>0</integer>
-									<integer>0</integer>
+									<integer>2</integer>
+									<integer>2</integer>
 								</array>
 							</dict>
 							<dict>
@@ -1113,7 +1129,7 @@
 								<key>value</key>
 								<array>
 									<string></string>
-									<string>ccbResources/ccbButtonHighlighted.png</string>
+									<string></string>
 								</array>
 							</dict>
 							<dict>
@@ -1137,8 +1153,16 @@
 								<key>value</key>
 								<array>
 									<string></string>
-									<string>ccbResources/ccbButtonNormal.png</string>
+									<string></string>
 								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>backgroundOpacity|Disabled</string>
+								<key>type</key>
+								<string>Float</string>
+								<key>value</key>
+								<real>1</real>
 							</dict>
 							<dict>
 								<key>name</key>
@@ -1156,8 +1180,16 @@
 								<key>value</key>
 								<array>
 									<string></string>
-									<string>ccbResources/ccbButtonNormal.png</string>
+									<string></string>
 								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>backgroundOpacity|Selected</string>
+								<key>type</key>
+								<string>Float</string>
+								<key>value</key>
+								<real>1</real>
 							</dict>
 							<dict>
 								<key>name</key>
@@ -1277,15 +1309,13 @@
 								<key>value</key>
 								<array>
 									<real>0.0</real>
-									<real>-2</real>
+									<real>0.0</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
 								</array>
 							</dict>
 						</array>
-						<key>selected</key>
-						<true/>
 					</dict>
 				</array>
 				<key>customClass</key>
@@ -1313,11 +1343,11 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>0.19062499701976776</real>
-							<real>118</real>
-							<integer>0</integer>
+							<real>0.20000000298023224</real>
+							<real>0.67000001668930054</real>
+							<integer>1</integer>
 							<integer>2</integer>
-							<integer>0</integer>
+							<integer>2</integer>
 						</array>
 					</dict>
 					<dict>

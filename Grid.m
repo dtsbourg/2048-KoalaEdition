@@ -19,7 +19,7 @@
         NSNull *_noTile;
 }
 
-static const NSInteger WIN_TILE = 2048;
+static const NSInteger WIN_TILE = 8;
 static const NSInteger GRID_SIZE = 4;
 static const NSInteger START_TILES = 2;
 
