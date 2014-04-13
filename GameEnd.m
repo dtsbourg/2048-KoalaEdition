@@ -6,6 +6,8 @@
 //  Copyright (c) 2014 Apportable. All rights reserved.
 //
 
+#import "Grid.h"
+#import "MainScene.h"
 #import "GameEnd.h"
 
 @implementation GameEnd {
@@ -21,6 +23,16 @@
 - (void)setMessage:(NSString *)message score:(NSInteger)score {
     _messageLabel.string = message;
     _scoreLabel.string = [NSString stringWithFormat:@"%d", score];
+}
+
+- (void)keepPlaying {
+    CCScene *current = [[CCDirector sharedDirector] runningScene];
+    
+    Grid*grid = [[[[current children] firstObject] children] objectAtIndex:1];
+    NSArray*d = [grid children];
+    GameEnd *popover = [d lastObject];
+    
+    [grid removeChild:popover];
 }
 
 

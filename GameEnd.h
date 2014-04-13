@@ -10,5 +10,5 @@
 
 @interface GameEnd : CCNode
 - (void)setMessage:(NSString *)message score:(NSInteger)score;
-
+@property(nonatomic, strong) IBOutlet UIButton*keepLabel;
 @end
