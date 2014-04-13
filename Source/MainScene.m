@@ -13,6 +13,9 @@
     CCLabelTTF *_scoreLabel;
     CCLabelTTF *_highscoreLabel;
     CCSprite *_koala;
+    
+    ADBannerView *_adView;
+    
 
 }
 
@@ -75,6 +78,31 @@
     }
 }
 
+-(id)init
+{
+    if( (self= [super init]) )
+    {
+        // On iOS 6 ADBannerView introduces a new initializer, use it when available.
+        if ([ADBannerView instancesRespondToSelector:@selector(initWithAdType:)]) {
+            _adView = [[ADBannerView alloc] initWithAdType:ADAdTypeBanner];
+            
+        } else {
+            _adView = [[ADBannerView alloc] init];
+        }
+        
+        CGRect adFrame = _adView.frame;
+        
+        adFrame.origin.y = 569-_adView.frame.size.height;
+        _adView.frame = adFrame;
+
+        [[[CCDirector sharedDirector]view]addSubview:_adView];
+        [_adView setBackgroundColor:[UIColor clearColor]];
+        [[[CCDirector sharedDirector]view]addSubview:_adView];
+        _adView.delegate = self;
+    }
+    
+    return self;
+}
 
 
 @end

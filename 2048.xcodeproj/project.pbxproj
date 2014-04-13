@@ -31,6 +31,7 @@
 		FCD24F5F18FA941F0006FF1D /* Launch_image_5s1.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD24F5E18FA941F0006FF1D /* Launch_image_5s1.png */; };
 		FCD24F6118FA94350006FF1D /* icon120.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD24F6018FA94350006FF1D /* icon120.png */; };
 		FCD24F6318FA94400006FF1D /* icon80.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD24F6218FA94400006FF1D /* icon80.png */; };
+		FCD24F6518FA95A40006FF1D /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCD24F6418FA95A40006FF1D /* iAd.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		FCD24F5E18FA941F0006FF1D /* Launch_image_5s1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Launch_image_5s1.png; sourceTree = "<group>"; };
 		FCD24F6018FA94350006FF1D /* icon120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon120.png; sourceTree = "<group>"; };
 		FCD24F6218FA94400006FF1D /* icon80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon80.png; sourceTree = "<group>"; };
+		FCD24F6418FA95A40006FF1D /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCD24F6518FA95A40006FF1D /* iAd.framework in Frameworks */,
 				B737898A1807642B0076A88C /* libcocos2d.a in Frameworks */,
 				B77F1B3217B978D7009739AE /* QuartzCore.framework in Frameworks */,
 				B77F1B3417B978D7009739AE /* OpenGLES.framework in Frameworks */,
@@ -173,6 +176,7 @@
 		B77F1B3017B978D7009739AE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FCD24F6418FA95A40006FF1D /* iAd.framework */,
 				B7B3713D180358F1007369CC /* libObjectiveChipmunk.a */,
 				B77F1B3117B978D7009739AE /* QuartzCore.framework */,
 				B77F1B3317B978D7009739AE /* OpenGLES.framework */,
@@ -240,7 +244,7 @@
 				ORGANIZATIONNAME = Apportable;
 				TargetAttributes = {
 					B77F1B2D17B978D7009739AE = {
-						DevelopmentTeam = SBVP8ED765;
+						DevelopmentTeam = DRXTS3ZU8M;
 						SystemCapabilities = {
 							com.apple.GameCenter = {
 								enabled = 0;
