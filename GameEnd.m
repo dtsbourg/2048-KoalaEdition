@@ -22,7 +22,7 @@
 
 - (void)setMessage:(NSString *)message score:(NSInteger)score {
     _messageLabel.string = message;
-    _scoreLabel.string = [NSString stringWithFormat:@"%d", score];
+    _scoreLabel.string = [NSString stringWithFormat:@"%ld", (long)score];
 }
 
 - (void)keepPlaying {

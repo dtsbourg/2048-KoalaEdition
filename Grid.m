@@ -19,7 +19,7 @@
         NSNull *_noTile;
 }
 
-static const NSInteger WIN_TILE = 8;
+static const NSInteger WIN_TILE = 2048;
 static const NSInteger GRID_SIZE = 4;
 static const NSInteger START_TILES = 2;
 
@@ -362,6 +362,7 @@ static const NSInteger START_TILES = 2;
     gameEndPopover.position = ccp(-0.035, -0.5);
     gameEndPopover.zOrder = INT_MAX;
     [gameEndPopover setMessage:message score:self.score];
+
     [self addChild:gameEndPopover];
 }
 

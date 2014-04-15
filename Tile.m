@@ -65,7 +65,7 @@
             break;
     }
     _backgroundNode.color = backgroundColor;
-    _valueLabel.string = [NSString stringWithFormat:@"%d", self.value];
+    _valueLabel.string = [NSString stringWithFormat:@"%ld", (long)self.value];
 }
 
 - (void)didLoadFromCCB {
