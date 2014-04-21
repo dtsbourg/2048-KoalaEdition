@@ -21,6 +21,7 @@
 		B77F1B3E17B978D7009739AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B3D17B978D7009739AE /* Foundation.framework */; };
 		B77F1B4017B978D7009739AE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B3F17B978D7009739AE /* CoreGraphics.framework */; };
 		B77F1B4217B978D7009739AE /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B4117B978D7009739AE /* CoreText.framework */; };
+		FCBC1AEC19055270007E1E95 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FCBC1AEB19055270007E1E95 /* Settings.bundle */; };
 		FCD229D118F9E3EF00C3161C /* Grid.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD229D018F9E3EF00C3161C /* Grid.m */; };
 		FCD229D518F9E40500C3161C /* Tile.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD229D418F9E40500C3161C /* Tile.m */; };
 		FCD24F5318F9FADE0006FF1D /* koala_lightsaber.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD24F5218F9FADE0006FF1D /* koala_lightsaber.png */; };
@@ -32,7 +33,6 @@
 		FCD24F6118FA94350006FF1D /* icon120.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD24F6018FA94350006FF1D /* icon120.png */; };
 		FCD24F6318FA94400006FF1D /* icon80.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD24F6218FA94400006FF1D /* icon80.png */; };
 		FCD24F6518FA95A40006FF1D /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCD24F6418FA95A40006FF1D /* iAd.framework */; };
-		FCD24F6718FAC3A70006FF1D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD24F6618FAC3A70006FF1D /* Default-568h@2x.png */; };
 		FCD24F6918FAC3B60006FF1D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCD24F6818FAC3B60006FF1D /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +73,7 @@
 		B77F1B3F17B978D7009739AE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		B77F1B4117B978D7009739AE /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		B7B3713D180358F1007369CC /* libObjectiveChipmunk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libObjectiveChipmunk.a; path = "../libs/cocos2d-iphone/external/Chipmunk/xcode/build/Debug-iphoneos/libObjectiveChipmunk.a"; sourceTree = "<group>"; };
+		FCBC1AEB19055270007E1E95 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		FCD229CF18F9E3EF00C3161C /* Grid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Grid.h; sourceTree = "<group>"; };
 		FCD229D018F9E3EF00C3161C /* Grid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Grid.m; sourceTree = "<group>"; };
 		FCD229D318F9E40500C3161C /* Tile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tile.h; sourceTree = "<group>"; };
@@ -87,7 +88,6 @@
 		FCD24F6018FA94350006FF1D /* icon120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon120.png; sourceTree = "<group>"; };
 		FCD24F6218FA94400006FF1D /* icon80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon80.png; sourceTree = "<group>"; };
 		FCD24F6418FA95A40006FF1D /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
-		FCD24F6618FAC3A70006FF1D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		FCD24F6818FAC3B60006FF1D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = 2048/Images.xcassets; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -160,7 +160,7 @@
 		B77F1B2517B978D7009739AE = {
 			isa = PBXGroup;
 			children = (
-				FCD24F6618FAC3A70006FF1D /* Default-568h@2x.png */,
+				FCBC1AEB19055270007E1E95 /* Settings.bundle */,
 				B737893C1807616C0076A88C /* Source */,
 				B77F1B4617B978D7009739AE /* Resources */,
 				9222E2B918734FF800A246C7 /* libs */,
@@ -299,8 +299,8 @@
 			files = (
 				FCD24F6318FA94400006FF1D /* icon80.png in Resources */,
 				FCD24F6918FAC3B60006FF1D /* Images.xcassets in Resources */,
+				FCBC1AEC19055270007E1E95 /* Settings.bundle in Resources */,
 				FCD24F5D18FA94010006FF1D /* Launch_image_5s.png in Resources */,
-				FCD24F6718FAC3A70006FF1D /* Default-568h@2x.png in Resources */,
 				FCD24F5318F9FADE0006FF1D /* koala_lightsaber.png in Resources */,
 				B737893B180761570076A88C /* Published-iOS in Resources */,
 				FCD24F5F18FA941F0006FF1D /* Launch_image_5s1.png in Resources */,

@@ -351,7 +351,7 @@ static const NSInteger START_TILES = 2;
 - (void)endGameWithMessage:(NSString*)message {
     NSNumber *highScore = [[NSUserDefaults standardUserDefaults] objectForKey:@"highscore"];
     if (self.score > [highScore intValue]) {
-        highScore = [NSNumber numberWithInt:self.score];
+        highScore = [NSNumber numberWithLong:self.score];
         [[NSUserDefaults standardUserDefaults] setObject:highScore forKey:@"highscore"];
         [[NSUserDefaults standardUserDefaults] synchronize];
         
