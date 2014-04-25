@@ -61,7 +61,7 @@
             backgroundColor = [CCColor colorWithRed:233.f/255.f green:185.f/255.f blue:13.f/255.f];
             break;
         default:
-            backgroundColor = [CCColor greenColor];
+            backgroundColor = [CCColor blackColor];
             break;
     }
     _backgroundNode.color = backgroundColor;
